@@ -1,7 +1,7 @@
 <?php
-function addItemToCatalog($title, $author, $pubyear, $price){
+function addItemToCatalog($title, $author, $pubyear, $price, $link){
 	// Prepare query
-	$sql = ""INSERT INTO catalog ($title, $author, $pubyear, $price) VALUES(?, ?, ?, ?);
+	$sql = "INSERT INTO catalog (title, author, pubyear, price) VALUES (?, ?, ?, ?)";
 
 	// Return a pointer to the expression
 	$stmt = mysqli_prepare($link, $sql);
