@@ -18,7 +18,7 @@ endif;
 <body>
 	<?php 
 		if(isset($x)){
-			echo "<div class='error-flash' style='background-color: #f00; padding: 20px; border-radius: 5px; border: 1px solid #aaa;'>$x</div>";
+			echo "<div class='error-flash' style='background-color: #f00; padding: 20px; border-radius: 5px; border: 1px solid #111;'>$x</div>";
 		}
 	?>
 	<form action="save2cat.php" method="post">
