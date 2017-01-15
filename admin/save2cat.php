@@ -1,8 +1,13 @@
 <?php
 if ($_POST['status']):
 	if($_POST['title'] && $_POST['author'] && $_POST['pubyear'] && $_POST['price']):
-
+		// Set variables
+		$title = $_POST['title'];
+		$author = $_POST['author'];
+		$pubyear = $_POST['pubyear'];
+		$price = $_POST['price'];
 	else:
+		// Text all fields!!!!
 		$x = "Check fields";
 	endif;
 endif;
